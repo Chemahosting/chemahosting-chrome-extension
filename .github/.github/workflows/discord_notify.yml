@@ -44,7 +44,7 @@ jobs:
 
           payload = {
               # AQUÍ ESTÁ EL CAMBIO: Usamos una f-string de Python con la variable 'repo'
-              "username": f"El Resmon de Javi - {repo}",
+              "username": f"ChemaHosting - {repo}",
               "avatar_url": "https://media.discordapp.net/attachments/1396830461594177719/1473288480955170867/resmonlogo2025.png",
               "embeds": [{
                   "title": f"✨ {msg}",
