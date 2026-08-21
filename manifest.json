@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "ChemaHosting: Indicadores de estado",
+  "short_name": "ChemaHosting",
+  "version": "1.5",
+  "homepage_url": "https://www.chemahosting.es",
+  "author": {"email": "qascoredes@gmail.com"},
+  "description": "Extensión para ver el estado de los nodos Operativos en el clúster ChemaHosting.",
+  "action": {
+    "default_popup": "index.html",
+    "default_popup_width": 500,
+    "default_popup_height": 400,
+    "default_icon": {
+      "16": "Img/logo.png",
+      "48": "Img/logo.png",
+      "128": "Img/logo.png"
+    }
+  }
+}

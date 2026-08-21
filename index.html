@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accesos Rápidos</title>
+        <style>
+            @font-face{font-family: "Tiny5"; src: url("Fonts/Tiny5-Regular.ttf");}
+            @font-face{font-family: "FiraCode"; src: url('Fonts/FiraCode-VariableFont_wght.ttf');}
+
+            body{font-family: Arial, sans-serif; background-color: #242424; color: white; margin: 10px; min-width: 300px; height: auto; overflow-y: auto;}
+            *{user-select: none;}
+
+            .botones{margin-top: 20px;}
+            .botones a{display: inline-block; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px rgba(0, 0, 0, 0); position: relative; -webkit-transition-property: color; transition-property: color; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; text-decoration: none; color: white; padding: 10px 20px; border: 2px solid; text-align: center;}
+            .botones a:before{content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; background: rgb(255, 0, 0); -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transform-origin: 0 50%; transform-origin: 0 50%; -webkit-transition-property: transform; transition-property: transform; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; -webkit-transition-timing-function: ease-out; transition-timing-function: ease-out;}
+            .botones a:hover, .botones a:focus, .botones a:active{color: white;}
+            .botones a:hover:before, .botones a:focus:before, .botones a:active:before{-webkit-transform: scaleX(1); transform: scaleX(1);}
+
+            #SeccionCero{margin-bottom: 20px;}
+            #SeccionCero div, #SeccionCero h1{text-align: center;}
+            #SeccionCero div img{height: 25px;}
+            #SeccionCero div p a{text-decoration: none; color: lightblue; font-family: "FiraCode"; cursor: pointer;}
+            #SeccionCero div p a:hover{text-decoration: underline; text-underline-offset: 5px;}
+
+            .botones a, #SeccionCero div p{font-size: 14px;}
+        </style>
+    </head>
+    <body id="Body">
+        <!-- ============================================================================= -->
+        <!-- ============================================================================= -->
+
+        <script src="script.js"></script>
+
+        <!-- ============================================================================= -->
+        <!-- ============================================================================= -->
+
+        <div style="display: flex; align-items: center;">
+            <img src="Img/logo.png" style="width: 70px; border-radius: 5px;">
+            <div style="align-items: center;">
+                <h1 style="margin-left: 20px; font-size: 30px; font-family:Tiny5; margin-top: 15px">ChemaHosting</h1>
+            </div>
+        </div>
+
+        <!-- ============================================================================= -->
+        <!-- ============================================================================= -->
+
+        <div id="SeccionCero">
+            <div>
+                <p>Nodo '<a href="https://coruna1.chemahosting.es" target="_blank">coruna1</a>'</p>
+                <img data-src="https://estado.chemahosting.es/api/badge/4/status?style=for-the-badge" />
+                <img data-src="https://estado.chemahosting.es/api/badge/4/uptime?style=for-the-badge" />
+                
+                <p>Nodo '<a href="https://malaga1.chemahosting.es" target="_blank">malaga1</a>'</p>
+                <img data-src="https://estado.chemahosting.es/api/badge/5/status?style=for-the-badge" />
+                <img data-src="https://estado.chemahosting.es/api/badge/5/uptime?style=for-the-badge" />
+                
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ============================================================================= -->
+        <!-- ============================================================================= -->
+
+        <div style="display: flex;" class="botones">
+            <a style="width: 50%; margin-right: 5px;" href="https://www.chemahosting.es/resources" target="_blank">Recursos</a>
+            <a style="width: 50%; margin-left: 5px;" href="https://www.chemahosting.es/services" target="_blank">Servicios</a>
+        </div>
+    </body>
+</html>
